@@ -1,4 +1,5 @@
-print("AI Fusion Agent zapushchen 🚀")
+print("AI Fusion Agent zapushchen [READY]")
+
 
 
 

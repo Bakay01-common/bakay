@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MURAS – Обучающая платформа</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-sans leading-relaxed text-gray-900">
+  <!-- Navigation -->
+  <header class="bg-white shadow fixed w-full z-10">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold">MURAS</div>
+      <ul class="hidden md:flex space-x-6">
+        <li><a href="#home" class="hover:text-blue-600">Главная</a></li>
+        <li><a href="#courses" class="hover:text-blue-600">Курсы</a></li>
+        <li><a href="#testimonials" class="hover:text-blue-600">Отзывы</a></li>
+        <li><a href="#support" class="hover:text-blue-600">Поддержка</a></li>
+      </ul>
+      <button id="menu" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+      </button>
+    </nav>
+    <ul id="mobile-menu" class="hidden md:hidden bg-white shadow px-4 pb-4 space-y-2">
+      <li><a href="#home" class="block hover:text-blue-600">Главная</a></li>
+      <li><a href="#courses" class="block hover:text-blue-600">Курсы</a></li>
+      <li><a href="#testimonials" class="block hover:text-blue-600">Отзывы</a></li>
+      <li><a href="#support" class="block hover:text-blue-600">Поддержка</a></li>
+    </ul>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="pt-24 pb-16 bg-gray-100 text-center">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Добро пожаловать в MURAS</h1>
+    <p class="text-lg md:text-xl">Онлайн-платформа для эффективного обучения</p>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Курсы</h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="p-6 bg-white shadow rounded">
+        <h3 class="text-xl font-semibold mb-2">Курс 1</h3>
+        <p>Описание курса 1. Узнайте основы и продвинутые техники.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded">
+        <h3 class="text-xl font-semibold mb-2">Курс 2</h3>
+        <p>Описание курса 2. Практические занятия и обратная связь.</p>
+      </div>
+      <div class="p-6 bg-white shadow rounded">
+        <h3 class="text-xl font-semibold mb-2">Курс 3</h3>
+        <p>Описание курса 3. Углубленное изучение темы.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">Отзывы</h2>
+      <div class="space-y-8 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
+        <div class="bg-white shadow rounded p-6">
+          <p class="italic">“Отличная платформа, много полезной информации!”</p>
+          <p class="mt-4 font-semibold">— Алия</p>
+        </div>
+        <div class="bg-white shadow rounded p-6">
+          <p class="italic">“Курсы MURAS помогли мне начать новую карьеру.”</p>
+          <p class="mt-4 font-semibold">— Тимур</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Support Section -->
+  <section id="support" class="py-16 container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8">Поддержка</h2>
+    <div class="max-w-xl mx-auto">
+      <form class="space-y-4">
+        <input type="text" placeholder="Ваше имя" class="w-full px-4 py-2 border rounded" />
+        <input type="email" placeholder="Email" class="w-full px-4 py-2 border rounded" />
+        <textarea placeholder="Сообщение" class="w-full px-4 py-2 border rounded"></textarea>
+        <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="bg-white text-center py-4 border-t">
+    <p>&copy; 2024 MURAS. Все права защищены.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>

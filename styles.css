@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom styles for MURAS landing page */
+section {
+  scroll-margin-top: 80px;
+}
